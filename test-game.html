@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="board" id="board" questionID="">
+		
+	</div>
+	<script>
+
+		var questions = {1: ['10', '2'],2: ['Nakov\'s first name', 'Svetlin']}
+		var currentQuestion = 1;
+
+		displayQuestion = function() {
+			var board = document.getElementById('board');
+			board.innerHTML = questions[currentQuestion][0];
+			board.setAttribute('questionID', currentQuestion);
+		}
+		checkAnswer = function() {
+			var board = document.getElementById('board');
+			var answer = document.getElementById('user-input').value;
+			var correctAnswer = questions[board.getAttribute('questionID')][1];
+			if (answer==correctAnswer) {
+				alert('Success');
+			} else {
+				alert('oh, no');
+			}
+		}
+
+		displayQuestion();
+	</script>
+	<form action="#">
+		Type answer: <input type="text" id="user-input">
+		<button onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+	</form>
+	
+</body>
+</html>
