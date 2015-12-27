@@ -1,0 +1,87 @@
+body{
+	background-color: #cea413;
+}
+
+#wrapper{
+	width: 960px;
+	height: 600px;
+	margin: 10px auto;
+}
+#header{
+	height: 100px;
+}
+#main{
+	background-color: #fff;
+}
+#footer{
+	height: 60px;
+}
+
+#logo {
+	width: 150px;
+	float: left;
+}
+
+#logo img{
+	width: 100%;
+	height: 100%;
+}
+
+#header nav {
+	float: right;
+	width: 810px;
+}
+
+#header nav li {
+	text-align: center;
+	display: inline-block;
+	width: 95px;
+	line-height: 40px;
+	padding-bottom: 10px;
+}
+
+#header nav li a {
+	text-decoration: none;
+	color: #d1cfc8;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#header nav li a:hover {
+	color: #fff;
+}
+
+.icon{
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+}
+
+.button {
+	margin:0 5px;
+	font-size: 20px;
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+	width: 32px;
+	line-height: 1em;
+}
+
+.button:before {
+	content: "\00a0";
+}
+
+.search{
+		background-image: url(../images/magnifying_glass.svg);
+}
+
+.bell{
+		background-image: url(../images/bell.svg);
+}
+
+.profile {
+	background: url(../images/profile.svg);
+}
