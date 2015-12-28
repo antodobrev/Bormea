@@ -16,6 +16,27 @@ body{
 	background-color: #fff;
 	height: auto;
 }
+#main section {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+#beers {
+	width: 400px;
+	height: 75px;
+	margin: 0 auto;
+	background-image: url(../images/beer-sprite.png);
+	background-repeat: no-repeat;
+}
+#main section a {
+	margin: 0 36px;
+	text-decoration: none;
+}
+#main section a input {
+	width: 50%;
+	height: 50px;
+	font-size: 150%;
+}
 #footer{
 	height: 60px;
 }
