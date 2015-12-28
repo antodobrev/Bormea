@@ -14,6 +14,7 @@ body{
 }
 #main{
 	background-color: #fff;
+	height: auto;
 }
 #footer{
 	height: 60px;
@@ -107,13 +108,20 @@ body{
 }
 
 #search{
-	background-image: url(../images/magnifying_glass.svg);
+	background: url(../images/Magnifying_glass.png);
+	background-position: 18px 18px;
+}
+#search:hover{
+	background: url("../images/Magnifying_glass.png");
+	background-position: 18px 18px;
 }
 
 #bell{
-	background-image: url(../images/bell.svg);
+	background: url(../images/Bell.png);
+	background-position: 18px 18px;
 }
 
 #profile {
-	background-image: url(../images/profile.svg);
+	background: url(../images/Profile.png);
+	background-position: 18px 18px;
 }
