@@ -20,6 +20,7 @@ body{
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
+	clear: both;
 }
 #beers {
 	width: 400px;
@@ -36,6 +37,16 @@ body{
 	width: 50%;
 	height: 50px;
 	font-size: 150%;
+}
+#main section form span {
+	font-size: 18px;
+}
+#question {
+	width: 100%;
+	color: black;
+	font-size: 25px;
+	float: left;
+	margin-bottom: 20px;
 }
 #footer{
 	height: 60px;
