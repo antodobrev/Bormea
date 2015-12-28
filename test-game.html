@@ -8,33 +8,18 @@
 	<div class="board" id="board" questionID="">
 		
 	</div>
-	<script>
 
-		var questions = {1: ['10', '2'],2: ['Nakov\'s first name', 'Svetlin']}
-		var currentQuestion = 1;
-
-		displayQuestion = function() {
-			var board = document.getElementById('board');
-			board.innerHTML = questions[currentQuestion][0];
-			board.setAttribute('questionID', currentQuestion);
-		}
-		checkAnswer = function() {
-			var board = document.getElementById('board');
-			var answer = document.getElementById('user-input').value;
-			var correctAnswer = questions[board.getAttribute('questionID')][1];
-			if (answer==correctAnswer) {
-				alert('Success');
-			} else {
-				alert('oh, no');
-			}
-		}
-
-		displayQuestion();
-	</script>
-	<form action="#">
+	<form id="open-form" action="#" style="display:none">
 		Type answer: <input type="text" id="user-input">
-		<button onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+		<button type="button" onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
 	</form>
+
+	<form id="multiple-form" action="" style="display:none">
+		<div id="multiple-form-options"></div>
+		<button type="button" onclick="checkMultipleAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+	</form>
+
+	<script src="js/beer-quiz.js"></script>
 	
 </body>
 </html>
