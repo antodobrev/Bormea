@@ -33,20 +33,21 @@ body{
 	display: block;
 	line-height: 35px;
 	padding-bottom: 10px;
+	border: ;
 }
 #apply li a{
-	text-decoration: underline;
-	color: #0c0a5c;
+	text-decoration: none;
+	color: #CEA413;
 	font-family: Arial;
 	font-weight: bold;
-	padding: 10px;
-	background-color: #e8b56a;
-	border: 2px;
+	padding: 10px 15px 10px 15px;
+	background-color: #234465;
 	border-radius: 50px;
 }
 #apply li a:hover{
 	text-decoration: none;
 	background-color: #fff;
+	color: #234465;
 }
 #header nav {
 	float: right;
