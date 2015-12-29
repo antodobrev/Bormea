@@ -15,6 +15,7 @@ body{
 #main{
 	background-color: #fff;
 	height: auto;
+	background-color: transparent;
 }
 #main section {
 	width: 60%;
@@ -26,7 +27,7 @@ body{
 	width: 400px;
 	height: 75px;
 	margin: 0 auto;
-	background-image: url(../images/beer-sprite.png);
+	background-image: url(../images/beer-sprite-transparent.png);
 	background-repeat: no-repeat;
 }
 #main section a {
