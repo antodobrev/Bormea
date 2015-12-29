@@ -107,7 +107,7 @@ body{
 #dropdown-courses {
 	visibility: hidden;
 	position: absolute;
-	left: 900px;
+	left: 47%;
 }
 
 #dropdown-courses li {
