@@ -18,7 +18,7 @@ body{
 	background-color: transparent;
 }
 #main section {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 	clear: both;
@@ -70,7 +70,7 @@ body{
 	line-height: 35px;
 	padding-bottom: 10px;
 }
-#apply li a{
+#apply li a, button{
 	text-decoration: none;
 	color: #CEA413;
 	font-family: Arial;
@@ -78,11 +78,13 @@ body{
 	padding: 10px 15px 10px 15px;
 	background-color: #234465;
 	border-radius: 50px;
+	border: none;
 }
-#apply li a:hover{
+#apply li a:hover, button:hover {
 	text-decoration: none;
 	background-color: #fff;
 	color: #234465;
+	cursor:pointer
 }
 #header nav {
 	float: right;
@@ -162,4 +164,22 @@ body{
 #profile {
 	background: url(../images/Profile.png);
 	background-position: 18px 18px;
+}
+.questions {
+	display: flex;
+	justify-content: space-between;
+}
+#board {
+	background: url('../images/whiteboard.png');
+	background-repeat: no-repeat;
+	height: 334px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0 0 20px;
+	display: flex;
+	box-sizing: border-box;
+	float: left;
+}
+.answer-section {
+	width: 20%;
 }

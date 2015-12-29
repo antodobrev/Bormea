@@ -48,20 +48,31 @@
         <div id="main">
             <section>
                 <div id="beers"></div>
-                <div id="question">What was the most difficult part of the Advanced C# Course?</div>
-                <form action="" id="answers">
-                    <p><input type="radio" name="answer" value="1" /><span> Strings </span></p>
-                    <p><input type="radio" name="answer" value="2" /><span> Regex </span></p>
-                    <p><input type="radio" name="answer" value="3" /><span> Matrices </span></p>
-                    <p><input type="radio" name="answer" value="4" /><span> Dictionary </span></p>
-                    <p><input type="radio" name="answer" value="5" /><span> Fuck it all! </span></p>
-                    <input type="submit" value="Answer" />
-                </form>
+                <div class="questions">
+                    <div class="board" id="board" questionID="">
+
+                    </div>
+
+                    <div class="answer-section">
+                        <form id="open-form" action="#" style="display:none">
+                            Type answer: <input type="text" id="user-input">
+                            <button type="button" onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                        </form>
+
+                        <form id="multiple-form" action="" style="display:none">
+                            <div id="multiple-form-options"></div>
+                            <button type="button" onclick="checkMultipleAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+
             </section>
         </div>
         <div id="footer">
 
         </div>
     </div>
+    <script src="js/beer-quiz.js"></script>
 </body>
 </html>
