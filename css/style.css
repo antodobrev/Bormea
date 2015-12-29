@@ -107,6 +107,7 @@ body{
 #dropdown-courses {
 	visibility: hidden;
 	position: absolute;
+	left: 900px;
 }
 
 #dropdown-courses li {
@@ -116,6 +117,10 @@ body{
 
 #dropdown-courses a {
 	display: block;
+}
+
+#dropdown-courses {
+	margin-top: 0;
 }
 
 #courses:hover ul{
