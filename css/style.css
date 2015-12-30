@@ -15,9 +15,9 @@ body {
 }
 
 #main {
-    background-color: #fff;
     height: auto;
-    /*background-color: transparent;*/
+    background: url("../images/bubbles.png");
+    background-repeat: repeat;
 }
 
 #main section {
