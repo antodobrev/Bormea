@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>First question</title>
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,35 +15,31 @@
             <div id="apply">
                 <li><a href="javascript:void(0);">Кандидатствай!</a></li>
             </div>
-            <nav>
-                <div id="text-items">
-                    <li><a href="javascript:void(0);">БИИРУНИ ▼</a></li>
-                    <li id="courses">
-                        <a href="javascript:void(0);">ОБУЧЕНИЯ ▼</a>
-                        <ul id="dropdown-courses">
-                            <a href="#"><li>Beer# Advanced</li></a>
-                            <a href="#"><li>Teamwork & Drinking Skills</li></a>
-                            <a href="#"><li>On-tap Oriented Potion</li></a>
-                            <a href="#"><li>High-Quality Brew</li></a>
-                            <a href="#"><li>Lager Basics</li></a>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);">РАБОТА</a></li>
-                    <li><a href="javascript:void(0);">ФОРУМ</a></li>
-                    <li><a href="javascript:void(0);">КОНТАКТИ</a></li>
-                </div>
-                <div id="icon-items">
-                    <li><a href="javascript:void(0);">
-                        <span id="search"></span>
-                    </a></li>
-                    <li><a href="javascript:void(0);">
-                        <span id="bell"></span>
-                    </a></li>
-                    <li><a href="javascript:void(0);">
-                        <span id="profile"></span>
-                    </a></li>
-                </div>
-            </nav>
+                    <nav id="main-nav">
+            <ul id="icon-items">
+                <li><a href="javascript:void(0);" id="search"></a></li>
+                <li><a href="javascript:void(0);" id="notification"></a></li>
+                <li><a href="javascript:void(0);" id="profile"></a></li>
+            </ul>
+            <ul id="text-items">
+                <li><a href="javascript:void(0);" class="dropdown">БИИРУНИ</a></li>
+                <li id="courses">
+                    <a href="#" class="dropdown">ОБУЧЕНИЯ</a>
+                    <ul id="dropdown-courses">
+                        <div class="container">
+                            <li><a href="#">Beer# Advanced</a></li>
+                            <li><a href="#">Teamwork & Drinking Skills</a></li>
+                            <li><a href="#">On-tap Oriented Potion</a></li>
+                            <li><a href="#">High-Quality Brew</a></li>
+                            <li><a href="#">Lager Basics</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">РАБОТА</a></li>
+                <li><a href="javascript:void(0);">ФОРУМ</a></li>
+                <li><a href="javascript:void(0);">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
         </div>
         <div id="main">
             <section>
