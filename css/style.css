@@ -196,8 +196,11 @@ body {
 }
 
 .questions {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    color: #234465;
 }
 
 #board {
@@ -210,6 +213,7 @@ body {
     display: flex;
     box-sizing: border-box;
     float: left;
+    font-size: 0.9em;
 }
 
 .answer-section {
