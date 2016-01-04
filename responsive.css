@@ -1,0 +1,40 @@
+@media all and (max-width: 1200px) {
+
+    /* Responsive Header */
+    #wrapper {
+        width: 95%;
+    }
+    #header nav {
+        width: 60%;
+    }
+    #icon-items {
+        width: 40%;
+    }
+    #icon-items a {
+        width: 28%;
+    }
+    #search, #notification, #profile {
+        background-repeat: no-repeat;
+    }
+    #text-items {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #text-items li {
+        width: 19%;
+    }
+    #text-items li a {
+        font-size: 0.78em;
+    }
+
+    /* Responsive Main TODO*/
+}
+
+@media all and (max-width: 960px) {
+
+}
+
+@media all and (max-width: 720px) {
+
+}

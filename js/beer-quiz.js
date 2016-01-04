@@ -1,5 +1,5 @@
 var questions = {
-	1: {'type': 'multiple', 'question': 'What was the most difficult part of the Advanced C# Course?','answer': 'Regex', 'options': ['Strings', 'Regex', 'Matrices', 'Dictionaries', 'Fuck it all!']},
+	1: {'type': 'multiple', 'question': 'What was the most difficult part of the Advanced C# Course?','answer': 'Regex', 'options': ['Strings', 'Regex', 'Dictionaries']},
 	2: {'type': 'multiple', 'question': '10','answer': '2', 'options': ['2', '1', '12']},
 	3: {'type': 'open', 'question': 'Nakov\'s first name','answer': 'Svetlin', 'options': []},
 	4: {'type': 'multiple', 'question': '11','answer': 3, 'options': ['2', 'Nakov', '3']},
