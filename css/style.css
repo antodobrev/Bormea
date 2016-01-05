@@ -107,7 +107,6 @@ body {
 #header nav {
     line-height: 35px;
     padding-bottom: 10px;
-
     display: inline-block;
     float: right;
 }
@@ -119,6 +118,7 @@ body {
 #text-items li {
     text-align: center;
     display: inline-block;
+    padding: 3px;
 }
 
 #text-items li a {
@@ -127,6 +127,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-right: 15px;
+    text-transform: uppercase;
 }
 
 #text-items li a:hover {
@@ -231,4 +232,14 @@ body {
     text-align: center;
     z-index: 9999;
     display: block;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+#multiple-form > button {
+    margin: 10px;
 }

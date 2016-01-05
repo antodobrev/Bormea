@@ -28,6 +28,7 @@
         font-size: 0.78em;
     }
 
+    
     /* Responsive Main */
     #main {
         margin-top: 65px;
@@ -45,6 +46,9 @@
     #apply a, button {
         float: left;
         margin-top: 10px;
+    }
+    #board {
+        background-size: contain;
     }
 }
 
