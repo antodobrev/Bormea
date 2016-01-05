@@ -27,6 +27,9 @@
     #text-items li a {
         font-size: 0.78em;
     }
+    #apply {
+        line-height: 15px;
+    }
 
     
     /* Responsive Main */
@@ -50,12 +53,52 @@
     #board {
         background-size: contain;
     }
+    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+        font-size: 0.7em;
+    }
 }
 
 @media all and (max-width: 960px) {
 
+    /* Responsive Header */
+    #icon-items {
+        display: none;
+    }
+    #text-items {
+        width: 95%;
+    }
+    .container {
+        display: flex;
+    }
+    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+        font-size: 0.6em;
+    }
 }
 
 @media all and (max-width: 720px) {
 
+    /* Responsive Header */
+    #header nav {
+        display: inline;
+        float: none;
+    }
+    #logo {
+        float: none;
+        margin: 0 auto;
+    }
+    #apply {
+        display: none;
+    }
+    #apply a, button {
+        float: none;
+    }
+    .container {
+        display: flex;
+    }
+    #text-items li {
+        width: 20%;
+    }
+    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+        font-size: 0.5em;
+    }
 }
