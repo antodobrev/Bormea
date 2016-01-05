@@ -30,12 +30,17 @@ body {
     padding-bottom: 20px;
 }
 
-#beers {
-    width: 400px;
+.beers {
+    width: 50px;
     height: 75px;
+    display: inline-block;
     margin: 0 auto;
-    background-image: url(../images/beer-sprite-transparent.png);
+    background: url(../images/beer-sprite-transparent.png) -400px 0;
     background-repeat: no-repeat;
+}
+
+.beers[active] {
+    border-bottom: 3px solid #234465;
 }
 
 #main section a {

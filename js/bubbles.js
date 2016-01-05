@@ -17,7 +17,6 @@ moveBackground = function() {
 			movingDown = true;
 		};
 		element.style.backgroundPosition = x + 'px ' + y + 'px';
-		console.log(x);
 	}, 30);
 }
 

@@ -26,6 +26,8 @@ displayQuestion = function() {
 	}
 	board.innerHTML = questions[currentQuestion]['question'];
 	board.setAttribute('questionID', currentQuestion);
+	var nextBeer = document.getElementById('beer-' + currentQuestion);
+	nextBeer.setAttribute("active", "active");
 }
 checkAnswer = function() {
 	var board = document.getElementById('board');
@@ -47,11 +49,14 @@ checkMultipleAnswer = function() {
 
 displaySuccessMessage = function(answer) {
 	var correctAnswer = questions[board.getAttribute('questionID')]['answer'];
+	var beer = document.getElementById('beer-' + currentQuestion);
 	if (answer==correctAnswer) {
 		alert('Success');
+		beer.style.background = "url(./images/beer-sprite-transparent.png) no-repeat";
 	} else {
 		alert('oh, no');
 	}
+	beer.removeAttribute("active");
 }
 
 displayQuestion();
