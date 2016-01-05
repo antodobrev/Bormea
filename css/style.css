@@ -240,6 +240,10 @@ footer {
     margin-top: 20px;
 }
 
+#multiple-form{
+    text-align: left;
+}
+
 #multiple-form > button {
     margin: 10px;
 }
