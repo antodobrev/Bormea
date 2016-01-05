@@ -1,0 +1,14 @@
+#main section p, #main section ul li {
+	font-weight: bold;
+	margin: 20px;
+	color: #234465;
+	vertical-align: middle;
+}
+
+#main section ul li img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+	vertical-align: middle;
+	padding: 15px;
+}
