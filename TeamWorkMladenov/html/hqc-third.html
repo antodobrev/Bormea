@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Third question</title>
+    <link rel="stylesheet" href="../styles/hqc-style/hqc-style.css">
+    <script>
+        function computeTrueForm(form)
+        {
+            var text = document.getElementById("text-field");
+            if (form.answer1.value == "True"){
+                var nextLink = document.getElementById("next");
+                form.showit.value = "Correct! It,s most important!";
+                text.style.display="block";
+                text.style.background="rgba(153, 255, 51, 0.2)";
+                setTimeout(function(){
+                    window.location='hqc-congratulations.html';
+                }, 3000);
+            }
+        }
+
+        function computeFalseForm(form)
+        {
+            var text = document.getElementById("text-field");
+            if (form.answer1.value == "True")
+            {
+                text.style.display="block";
+                form.showit.value =  "Try again!";
+                text.style.background="rgba(255, 51, 0, 0.5)";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="wrapper">
+    <header></header>
+    <main>
+        <div id="main-content">
+            <section>
+                <h1>Question 3:</h1>
+                <h3>You have to know reflection to pass the exam?</h3>
+                <form method="post">
+                    <div id="choice">
+                        <input class="choice" type="button" name="true" value="True" onclick="computeTrueForm(form)">
+                        <input class="choice" type="button" name="false" value="False" onclick="computeFalseForm(form)">
+                    </div>
+                    <input type="hidden" name="answer1" value="True">
+                    <textarea name="showit" rows="10" cols="60" id="text-field"></textarea>
+                </form>
+            </section>
+            <div id="bubble1"></div>
+            <div id="bubble2"></div>
+            <div id="dancho"></div>
+        </div>
+    </main>
+    <footer></footer>
+</div>
+</body>
+</html>
