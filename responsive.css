@@ -28,7 +28,24 @@
         font-size: 0.78em;
     }
 
-    /* Responsive Main TODO*/
+    /* Responsive Main */
+    #main {
+        margin-top: 65px;
+    }
+    #main section, .questions {
+        width: 90%;
+    }
+    #board {
+        width: 70%;
+        background-size: contain;
+    }
+    #multiple-form-options {
+        text-align: left;
+    }
+    #apply a, button {
+        float: left;
+        margin-top: 10px;
+    }
 }
 
 @media all and (max-width: 960px) {
