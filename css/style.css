@@ -218,10 +218,25 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 40px 0 0 20px;
-    display: flex;
     box-sizing: border-box;
     float: left;
     font-size: 0.9em;
+}
+
+#board p {
+    text-align: left;
+}
+
+.cor-answer {
+    color: green;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.incorrect-answer {
+    color: red;
+    margin: 20px;
+    font-size: 1.5em;
 }
 
 .answer-section {
