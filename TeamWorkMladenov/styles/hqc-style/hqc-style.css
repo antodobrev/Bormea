@@ -39,7 +39,7 @@ body {
           display: none;
           width: 100%;
           margin-top: 20px;
-          background: linear-gradient(to right, green, lightgreen);
+          background: linear-gradient(to bottom right, green, lightgreen);
           text-transform: uppercase; }
         body #wrapper main #main-content section form textarea {
           display: none;
