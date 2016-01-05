@@ -239,3 +239,7 @@ footer {
     font-size: 0.9em;
     margin-top: 20px;
 }
+
+#multiple-form > button {
+    margin: 10px;
+}
