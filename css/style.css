@@ -233,3 +233,9 @@ body {
     z-index: 9999;
     display: block;
 }
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
