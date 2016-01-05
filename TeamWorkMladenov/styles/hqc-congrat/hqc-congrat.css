@@ -9,9 +9,10 @@ body #container #last {
   font-size: 4em; }
 body #container p {
   text-transform: uppercase; }
-body #container #main {
+body #container button#back {
   font-family: Blazed;
-  color: blue; }
+  color: blue;
+  background-color: lightgray; }
 body #container #dancho2 {
   margin: 0 auto;
   width: 200px;

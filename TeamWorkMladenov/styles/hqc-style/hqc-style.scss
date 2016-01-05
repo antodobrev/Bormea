@@ -3,6 +3,8 @@ body{
   background-size: cover;
 
   #wrapper{
+    width: 100%;
+    padding: 0;
 
     main{
 
@@ -10,7 +12,7 @@ body{
         display: block;
         width: 655px;
         margin: 0 auto;
-        margin-top: 300px;
+        margin-top: 220px;
 
         section{
           width: 300px;
@@ -114,6 +116,24 @@ body{
         section, #bubble2, #bubble1{
           background-color: rgba(255, 255, 255, 0.8);
         }
+      }
+    }
+
+    footer{
+      color: white;
+      margin-top: 18%;
+    }
+
+    #header{
+      background-color: #CEA413;
+      padding-left: 10px;
+
+      nav{
+        line-height: 25px;
+      }
+
+      li{
+        list-style-type: none;
       }
     }
   }
