@@ -27,8 +27,11 @@
     #text-items li a {
         font-size: 0.78em;
     }
-
+    
     /* Responsive Main TODO*/
+    #board {
+        background-size: contain;
+    }
 }
 
 @media all and (max-width: 960px) {
