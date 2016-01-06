@@ -5,6 +5,7 @@
     <title>Teamwork and Drinkin Skills Cource</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
 <div id="wrapper">
@@ -53,8 +54,43 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <div id="main">
+        <section>
+            <div class="beer-points">
+                <div id="beer-1" class="beers"></div>
+                <div id="beer-2" class="beers"></div>
+                <div id="beer-3" class="beers"></div>
+                <div id="beer-4" class="beers"></div>
+                <div id="beer-5" class="beers"></div>
+            </div>
+            <div class="questions">
+                <div class="board" id="board" questionID="">
+                    <p id="question-text"></p>
+                </div>
+
+                <div class="answer-section">
+                    <form id="open-form" action="#" style="display:none">
+                        Type answer: <input type="text" id="user-input">
+                        <button type="button" onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                    </form>
+
+                    <form id="multiple-form" action="" style="display:none">
+                        <div id="multiple-form-options"></div>
+                        <button type="button" onclick="checkMultipleAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; Creative Commons License, SoftUni Team Bormea, 2016</p>
+        <div id="links">
+            <a id="github" href="https://github.com/antodobrev/Bormea/"></a>
+        </div>
+    </footer>
+</div>
+<script src="../js/beer-quiz.js"></script>
+<script src="../js/bubbles.js"></script>
 </div>
 </body>
 </html>
