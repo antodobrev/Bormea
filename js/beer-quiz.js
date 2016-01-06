@@ -8,6 +8,7 @@ var questions = {
 var currentQuestion = 1;
 
 displayQuestion = function() {
+
 	console.log(currentQuestion);
 	var board = document.getElementById('board');
 	var nextQuestionType = questions[currentQuestion]['type'];
@@ -55,7 +56,7 @@ displaySuccessMessage = function(answer) {
 		//alert('Success');
 		clearMessage();
 		board.innerHTML = board.innerHTML + "<p class=\"cor-answer\"> Correct!</p>";
-		beer.style.background = "url(./images/beer-sprite-transparent.png) no-repeat";
+		beer.style.background = "url(../images/beer-sprite-transparent.png) no-repeat";
 	} else {
 		//alert('oh, no');
 		clearMessage();
