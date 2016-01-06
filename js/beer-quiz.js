@@ -71,5 +71,5 @@ function clearMessage () {
 
 setTimeout(function() {
 	displayQuestion();
-}, 10);
+}, 0);
 
