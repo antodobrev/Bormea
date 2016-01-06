@@ -316,7 +316,7 @@ header nav {
     width: 20%;
 }
 
-.container {
+.container, .first-container {
     position: absolute;
     left: 0;
     right: 0;
