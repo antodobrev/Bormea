@@ -25,8 +25,10 @@ displayQuestion = function() {
 		document.getElementById("multiple-form").style.display = "none";
 
 	}
-	board.innerHTML = questions[currentQuestion]['question'];
+	document.getElementById('question-text').innerHTML = questions[currentQuestion]['question'];
 	board.setAttribute('questionID', currentQuestion);
+	var nextBeer = document.getElementById('beer-' + currentQuestion);
+	nextBeer.setAttribute("active", "active");
 }
 checkAnswer = function() {
 	var board = document.getElementById('board');
@@ -48,11 +50,29 @@ checkMultipleAnswer = function() {
 
 displaySuccessMessage = function(answer) {
 	var correctAnswer = questions[board.getAttribute('questionID')]['answer'];
+	var beer = document.getElementById('beer-' + currentQuestion);
 	if (answer==correctAnswer) {
-		alert('Success');
+		//alert('Success');
+		clearMessage();
+		board.innerHTML = board.innerHTML + "<p class=\"cor-answer\"> Correct!</p>";
+		beer.style.background = "url(./images/beer-sprite-transparent.png) no-repeat";
 	} else {
-		alert('oh, no');
+		//alert('oh, no');
+		clearMessage();
+		board.innerHTML = board.innerHTML + "<p class=\"incorrect-answer\"> Wrong!</p>";
 	}
+	beer.removeAttribute("active");
+}
+
+function clearMessage () {
+	var correctAnwerDiv = document.getElementsByClassName('cor-answer')[0];
+	if (correctAnwerDiv) {
+		correctAnwerDiv.parentNode.removeChild(correctAnwerDiv);
+	};
+	var incorrectAnwerDiv = document.getElementsByClassName('incorrect-answer')[0];
+	if (incorrectAnwerDiv) {
+		incorrectAnwerDiv.parentNode.removeChild(incorrectAnwerDiv);
+	};
 }
 
 displayQuestion();

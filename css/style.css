@@ -297,9 +297,6 @@ body {
     box-sizing: border-box;
     float: left;
     font-size: 0.9em;
-}
-
-#board p {
     text-align: left;
 }
 
