@@ -1,7 +1,9 @@
 var currentQuestion = 1;
 
 displayQuestion = function() {
-
+	if (currentQuestion > 5) {
+		window.location.replace('/certificate.html')
+	};
 	console.log(currentQuestion);
 	var board = document.getElementById('board');
 	var nextQuestionType = questions[currentQuestion]['type'];
@@ -71,5 +73,5 @@ function clearMessage () {
 
 setTimeout(function() {
 	displayQuestion();
-}, 10);
+}, 100);
 
