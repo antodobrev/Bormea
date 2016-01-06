@@ -372,3 +372,12 @@ footer a {
     background: rgba(255, 255, 255, 0.4) url("../images/404.png") no-repeat;
     background-size: contain;
 }
+
+#certificate {
+    display: block;
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 768px;
+    background: rgba(255, 255, 255, 0.4) url("../images/certificate.jpg") no-repeat;
+    background-size: contain;
+}
