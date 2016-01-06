@@ -71,6 +71,7 @@ header {
 
 #article-container>article>main>ul>li:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #article-container>article>main>ul>li>span{
@@ -98,6 +99,9 @@ header {
     padding: 10px 15px;
     border-radius: 30px;
     font-weight: bold;
+}
+#article-container>article>footer>.button:hover{
+    cursor: pointer;
 }
 
 #article-container>article>footer>.button:hover{
@@ -128,6 +132,10 @@ header {
     width: 50%;
     height: 50px;
     font-size: 150%;
+    text-transform: uppercase;
+}
+#main section a input:hover {
+    cursor: pointer;
 }
 
 #main section form span {
@@ -166,7 +174,7 @@ header {
     padding-bottom: 10px;
 }
 
-#apply a, button {
+#apply a, button, #main section a input  {
     text-decoration: none;
     color: #CEA413;
     font-size: 14px;
