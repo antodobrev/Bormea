@@ -30,6 +30,83 @@ body {
     padding-bottom: 20px;
 }
 
+/*/////// STYLE ARTICLES////////*/
+#article-container{
+    display: flex;
+    margin-top: 50px;
+}
+
+#article-container>article{
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    vertical-align: top;
+    margin-right: 4%;
+    position: relative;
+    height: 350px;
+}
+
+#article-container>article>header{
+    text-align: left;
+    background-color: #234465;
+    padding: 10px 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+#article-container>article>header>h3{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#article-container>article>main>ul>li{
+    text-align: left;
+    color:  #234465;
+    padding: 15px 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#article-container>article>main>ul>li:hover{
+    text-decoration: underline;
+}
+
+#article-container>article>main>ul>li>span{
+    font-weight: bold;
+}
+
+#article-container>article>main>ul>li>.time{
+    font-weight: bold;
+}
+
+#article-container>article>main>ul>:last-child{
+    border-bottom: none;
+}
+
+#article-container>article>footer{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid lightgrey;
+}
+
+#article-container>article>footer>.button{
+    background-color: #FFA000;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#article-container>article>footer>.button:hover{
+    background-color: #234465;
+}
+
+/*/////// STYLE ARTICLES////////*/
+
 .beers {
     width: 50px;
     height: 75px;
