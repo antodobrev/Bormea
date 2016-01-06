@@ -71,12 +71,15 @@
                 <div class="answer-section">
                     <form id="open-form" action="#" style="display:none">
                         Type answer: <input type="text" id="user-input">
-                        <button type="button" onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                        <button type="button" onclick="checkAnswer(); currentQuestion++; displayQuestion()">Submit
+                        </button>
                     </form>
 
                     <form id="multiple-form" action="" style="display:none">
                         <div id="multiple-form-options"></div>
-                        <button type="button" onclick="checkMultipleAnswer(); currentQuestion++; displayQuestion()">Submit</button>
+                        <button type="button" onclick="checkMultipleAnswer(); currentQuestion++; displayQuestion()">
+                            Submit
+                        </button>
                     </form>
                 </div>
             </div>
@@ -89,6 +92,20 @@
         </div>
     </footer>
 </div>
+<script src="../js/loadJson.js"></script>
+<script>
+    var questions = "";
+
+    loadJSON('/js/drinking-skills.json',
+            function (data) {
+                questions = JSON.parse(data);
+            },
+            function (xhr) {
+                console.error(xhr);
+            }
+    )
+
+</script>
 <script src="../js/beer-quiz.js"></script>
 <script src="../js/bubbles.js"></script>
 </div>
