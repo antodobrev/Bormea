@@ -73,6 +73,19 @@
     html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
         font-size: 0.6em;
     }
+
+    /*/////// STYLE ARTICLES////////*/
+    #article-container{
+        display: block;
+    }
+
+    #article-container>article{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /*/////// STYLE ARTICLES////////*/
 }
 
 @media all and (max-width: 720px) {
