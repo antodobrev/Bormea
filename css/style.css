@@ -8,7 +8,7 @@ body {
     padding-top: 10px;
 }
 
-#header {
+header {
     height: 40px;
     width: 100%;
     padding: 10px 0;
@@ -185,7 +185,7 @@ body {
     cursor: pointer
 }
 
-#header nav {
+header nav {
     line-height: 35px;
     padding-bottom: 10px;
     display: inline-block;
@@ -219,22 +219,22 @@ body {
     content: " ▼";
 }
 
-#dropdown-courses {
+.dropdown-menu {
     padding: 0 15px;
     margin: 5px auto;
     visibility: hidden;
 }
 
-#dropdown-courses li {
+.dropdown-menu li {
     display: inline-block;
     padding-bottom: 0;
 }
 
-#dropdown-courses a {
+.dropdown-menu a {
     display: inline-block;
 }
 
-#courses:hover ul {
+.dropdown-button:hover ul {
     visibility: visible;
 }
 
@@ -363,4 +363,12 @@ footer a {
 
 #multiple-form > button {
     margin: 10px;
+}
+#error {
+    display: block;
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 768px;
+    background: rgba(255, 255, 255, 0.4) url("../images/404.png") no-repeat;
+    background-size: contain;
 }

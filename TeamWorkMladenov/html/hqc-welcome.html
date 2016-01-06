@@ -5,12 +5,13 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../responsive.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../styles/hqc-main/style.css">
+    <link rel="stylesheet" href="../styles/hqc-style/hcq-responsive.css">
 </head>
 <body>
     <div id="container">
-        <div id="header">
+        <header>
             <div id="logo">
                 <a href="../../index.html"><img src="../../images/logo.png" alt=""></a>
             </div>
@@ -24,16 +25,28 @@
                     <li><a href="javascript:void(0);" id="profile"></a></li>
                 </ul>
                 <ul id="text-items">
-                    <li><a href="javascript:void(0);" class="dropdown">BeerUni</a></li>
-                    <li id="courses">
-                        <a href="#" class="dropdown">Courses</a>
-                        <ul id="dropdown-courses">
+                    <li class="dropdown-button">
+                        <a href="javascript:void(0);" class="dropdown">BeerUni</a>
+                        <ul class="dropdown-menu">
                             <div class="container">
-                                <li><a href="../../bsharp-advanced.html">Beer# Advanced</a></li>
-                                <li><a href="#">Teamwork & Drinking Skills</a></li>
-                                <li><a href="../../OOP.html">On-tap Oriented Potation</a></li>
-                                <li><a href="hqc-welcome.html">High-Quality Brew</a></li>
-                                <li><a href="../../lager-basics.html">Lager Basics</a></li>
+                                <li><a href="../../404.html">About BeerUni</a></li>
+                                <li><a href="../../images/certificate.jpg">Certificates</a></li>
+                                <li><a href="../../404.html">Breweries Partners</a></li>
+                                <li><a href="../../contacts.html">Drinkers</a></li>
+                                <li><a href="../../404.html">How to apply</a></li>
+                                <li><a href="../../404.html">FAQ</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown-button">
+                        <a href="#" class="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <div class="container">
+                                <li><a href="../../cources/bsharp-advanced.html">Beer# Advanced</a></li>
+                                <li><a href="../../cources/drinking_skills.html">Teamwork & Drinking Skills</a></li>
+                                <li><a href="../../cources/OOP.html">On-tap Oriented Potation</a></li>
+                                <li><a href="#">High-Quality Brew</a></li>
+                                <li><a href="../../cources/lager-basics.html">Lager Basics</a></li>
                             </div>
                         </ul>
                     </li>
@@ -42,7 +55,7 @@
                     <li><a href="../../contacts.html">Contacts</a></li>
                 </ul>
             </nav>
-        </div>
+        </header>
         <section>
             <div id="dancho"></div>
             <h1>Welcome to the<br><span>HQB course</span></h1>

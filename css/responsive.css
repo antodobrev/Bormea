@@ -4,7 +4,7 @@
     #wrapper {
         width: 95%;
     }
-    #header nav {
+    header nav {
         width: 60%;
     }
     #icon-items {
@@ -53,7 +53,7 @@
     #board {
         background-size: contain;
     }
-    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+    html body div#wrapper header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
         font-size: 0.7em;
     }
 }
@@ -70,7 +70,7 @@
     .container {
         display: flex;
     }
-    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+    html body div#wrapper header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
         font-size: 0.6em;
     }
 
@@ -91,7 +91,7 @@
 @media all and (max-width: 720px) {
 
     /* Responsive Header */
-    #header nav {
+    header nav {
         display: inline;
         float: none;
     }
@@ -111,7 +111,7 @@
     #text-items li {
         width: 20%;
     }
-    html body div#wrapper div#header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
+    html body div#wrapper header nav#main-nav ul#text-items li#courses ul#dropdown-courses div.container li a {
         font-size: 0.5em;
     }
 }
