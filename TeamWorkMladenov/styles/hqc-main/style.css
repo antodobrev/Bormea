@@ -5,6 +5,7 @@
   font-family: Blazed;
   src: url("../fonts/Blazed/Blazed.ttf"); }
 body {
+	margin:0;
   background-image: url("../../images/giphy.gif");
   background-size: cover;
   font-family: Arial, sans-serif;

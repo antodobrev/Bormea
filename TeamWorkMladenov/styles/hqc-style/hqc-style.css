@@ -1,6 +1,8 @@
 body {
   background: url("../../images/SoftUni-Open-Source-Lab-Strudents.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin: 0;
+}
   body #wrapper {
     width: 100%;
     padding: 0; }

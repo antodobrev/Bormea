@@ -44,6 +44,7 @@ body {
     margin-right: 4%;
     position: relative;
     height: 350px;
+    border: 1px solid #234465;
 }
 
 #article-container>article>header{
@@ -87,15 +88,13 @@ body {
 #article-container>article>footer{
     position: absolute;
     bottom: 0;
-    height: 30px;
-    padding: 10px;
     width: 100%;
     border-top: 1px solid lightgrey;
 }
 
 #article-container>article>footer>.button{
     background-color: #FFA000;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px 15px;
     border-radius: 30px;
     font-weight: bold;
